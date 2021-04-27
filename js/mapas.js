@@ -1,9 +1,10 @@
-/ Creación de un mapa de Leaflet
-var map = L.map("mapid");
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-// Centro del mapa y nivel inicial de acercamiento
-var catedralSJ = L.latLng([9.9326673, -84.0787633]);
-var zoomLevel = 7;
-
-// Vista del mapa
-map.setView(catedralSJ, zoomLevel);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+	maxZoom: 18,
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	id: 'mapbox/streets-v11',
+	tileSize: 512,
+	zoomOffset: -1
+}).addTo(mymap);
