@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
 </head>
 <body>
-    <h1>Ejemplo de mapa desarrollado con Leaflet 04</h1>     
+    <h1>Ejemplo de mapa desarrollado con Leaflet 05</h1>     
     
     <div id="mapid" style="height: 500px; width: 500px;"></div>
 
@@ -41,6 +41,14 @@
 	liberia = L.marker([10.633333, -85.433333]);
 	liberia.bindTooltip("Liberia").openTooltip();
 	liberia.addTo(mapa);
+	    
+	limon = L.marker([10.002216, -83.084037]);
+	limon.bindTooltip("Limón").openTooltip();
+	limon.addTo(mapa);	   
+	    
+	puntarenas = L.marker([9.966667, -84.833333]);
+	puntarenas.bindTooltip("Puntarenas").openTooltip();
+	puntarenas.addTo(mapa);	    	    
 	    
 	// Control de escala
 	L.control.scale().addTo(mapa);
