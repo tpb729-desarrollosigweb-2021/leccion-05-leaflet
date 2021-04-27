@@ -21,16 +21,30 @@
 	var mapa = L.map('mapid').setView([10, -84], 7);
 
 	// Capa base
-	L.tileLayer(
+	var osm = L.tileLayer(
 	  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?', 
-	  {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
-	).addTo(mapa);		    
+	  {maxZoom: 19,
+	   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
+	).addTo(mapa);		
+	    
+	// Otra capa base
+        var esri = L.tileLayer(
+	  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
+	  {attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}
+	).addTo(mapa);	    
 	    
 	// Marcadores
 	L.marker([10.8164249, -85.3593949]).addTo(mapa);
 	    
 	// Controles
 	L.control.scale().addTo(mapa);
+	    
+	var mapasBase = {
+	    "OSM": osm,
+	    "ESRI": esri
+	};	    
+	    
+        L.control.layers(mapasBase).addTo(mapa);	    
     </script>									    
 </body>
 </html>
