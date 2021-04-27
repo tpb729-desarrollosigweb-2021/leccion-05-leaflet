@@ -11,9 +11,9 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
 </head>
 <body>
-    <h1>Ejemplo de mapa desarrollado con Leaflet 02</h1>     
+    <h1>Ejemplo de mapa desarrollado con Leaflet 03</h1>     
     
-    <div id="mapid" style="height: 200px;"></div>
+    <div id="mapid" style="height: 500px; width: 500px;"></div>
 
     <!-- Código principal de Leaflet -->
     <script>
@@ -27,7 +27,7 @@
 	).addTo(mapa);		    
 	    
 	// Marcadores
-	L.marker([10.8164249, -85.3593949]).addTo(map);
+	L.marker([10.8164249, -85.3593949]).addTo(mapa);
 	    
 	// Controles
 	L.control.scale().addTo(mapa);
