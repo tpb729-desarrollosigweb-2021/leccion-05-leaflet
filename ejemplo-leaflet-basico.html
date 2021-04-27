@@ -7,43 +7,51 @@
     <!-- Hoja de estilos CSS de Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     
-    <!-- Biblioteca JS de Leaflet -->
+    <!-- Biblioteca JavaScript de Leaflet -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
 </head>
 <body>
-    <h1>Ejemplo de mapa desarrollado con Leaflet 03</h1>     
+    <h1>Ejemplo de mapa desarrollado con Leaflet 04</h1>     
     
     <div id="mapid" style="height: 500px; width: 500px;"></div>
 
     <!-- Código principal de Leaflet -->
     <script>
-	// Variable del mapa Leaflet
+	// Mapa Leaflet
 	var mapa = L.map('mapid').setView([10, -84], 7);
 
 	// Capa base
 	var osm = L.tileLayer(
 	  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?', 
-	  {maxZoom: 19,
-	   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
+	  {
+	    maxZoom: 19,
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	  }
 	).addTo(mapa);		
 	    
 	// Otra capa base
         var esri = L.tileLayer(
 	  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
-	  {attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}
+	  {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+	  }
 	).addTo(mapa);	    
 	    
 	// Marcadores
-	L.marker([10.8164249, -85.3593949]).addTo(mapa);
+	liberia = L.marker([10.633333, -85.433333]);
+	liberia.bindTooltip("Liberia").openTooltip();
+	liberia.addTo(mapa);
 	    
-	// Controles
+	// Control de escala
 	L.control.scale().addTo(mapa);
 	    
+	// Conjunto de capas base
 	var mapasBase = {
 	    "OSM": osm,
 	    "ESRI": esri
 	};	    
 	    
+	// Control de capas
         L.control.layers(mapasBase).addTo(mapa);	    
     </script>									    
 </body>
