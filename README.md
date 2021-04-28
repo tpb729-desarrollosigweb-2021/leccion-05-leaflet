@@ -124,7 +124,7 @@ En [Leaflet Provider Demo](https://leaflet-extras.github.io/leaflet-providers/pr
 ### Clase Marker
 La clase [Marker](https://leafletjs.com/reference-1.7.1.html#marker) se utiliza para desplegar marcadores en el mapa.
 
-Puede utilizarse conjuntamente con las clases [Popup](https://leafletjs.com/reference-1.7.1.html#popup) y [Tooltip](https://leafletjs.com/reference-1.5.0.html#tooltip), para desplegar información en ventanas emergentes.
+Puede utilizarse conjuntamente con las clases [Popup](https://leafletjs.com/reference-1.7.1.html#popup) y [Tooltip](https://leafletjs.com/reference-1.7.1.html#tooltip), para desplegar información en ventanas emergentes.
 
 ```javascript
 // Marcador para la Catedral Metropolitana de San José
