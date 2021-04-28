@@ -133,3 +133,36 @@ var catedralSJMarker = L.marker([9.9326673, -84.0787633])
 catedralSJMarker.bindPopup('<a href="https://es.wikipedia.org/wiki/Catedral_metropolitana_de_San_Jos%C3%A9">Catedral Metropolitana de San José</a>.<br>Catedral de estilo clásico y barroco. Templo principal de la arquidiócesis católica de San José.<br>Construída entre 1825 y 1827 y reconstruída en 1878.').openPopup();
 catedralSJMarker.bindTooltip("Catedral Metropolitana de San José").openTooltip();
 ```
+
+Varios sitios web ofrecen íconos que pueden utilizarse como marcadores personalizados como, por ejemplo, [Font Awesome](https://fontawesome.com/).
+
+HTML
+```html
+
+```
+
+JavaScript
+```javascript
+L.marker(
+  [9.9326673, -84.0787633],
+  {
+    icon: L.divIcon(
+      {html: '<i class="fas fa-church"></i>'}
+    )
+  }
+)	
+```
+
+### Clase Control
+La clase [Control](https://leafletjs.com/reference-1.7.1.html#control) es la clase base para implementar controles en un mapa. Todas las clases de controles heredan de esta clase. Ejemplos de clases de controles: 
+
+* [Zoom](https://leafletjs.com/reference-1.7.1.html#control-zoom): botones de acercamiento y alejamiento.
+* [Attribution](https://leafletjs.com/reference-1.7.1.html#control-attribution): datos de atribución (ej. autoría).
+* [Layers](https://leafletjs.com/reference-1.7.1.html#control-layers): activa y desactiva capas.
+* [Scale](https://leafletjs.com/reference-1.7.1.html#control-scale): añade una escala.
+
+**
+Ejercicios
+
+
+**
