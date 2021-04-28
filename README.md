@@ -87,3 +87,12 @@ Código HTML, CSS y JavaScript
 </body>
 </html>
 ```
+
+## Clases del API de Leaflet
+### Map
+La clase [Map](https://leafletjs.com/reference-1.7.1.html#map) es la clase central del API de Leaflet. Se utiliza para crear un mapa y manipularlo.
+
+```javascript
+// Mapa Leaflet
+var mapa = L.map('mapid').setView([10, -84], 7);
+```
