@@ -6,7 +6,7 @@ El código JavaScript de Leaflet se invoca desde documentos en [Lenguaje de Marc
 ## Documentación
 La referencia de la interfaz de programación de aplicaciones [(API) de Leaflet](https://leafletjs.com/reference-1.7.1.html) contiene la documentación de las clases, métodos, eventos y demás componentes para la programación en JavaScript. El sitio oficial contiene también un conjunto de [tutoriales y ejemplos](https://leafletjs.com/examples.html).
 
-## Preparación para el uso
+## Preparativos para el uso
 De acuerdo con la [Guía de inicio rápido](https://leafletjs.com/examples/quick-start/), para utilizar Leaflet en un sitio web, primero debe incluirse en el código HTML:
 
 - Un enlace a la hoja CSS de Leaflet.
@@ -14,3 +14,13 @@ De acuerdo con la [Guía de inicio rápido](https://leafletjs.com/examples/quick
 - Un elemento [div](https://developer.mozilla.org/es/docs/Web/HTML/Element/div) para contener el mapa.
 
 Los archivos JavaScript y CSS de Leaflet pueden descargarse del [repositorio de código fuente](https://github.com/Leaflet/Leaflet) o referenciarse a través de enlaces a una [red de distribución de contenidos (CDN)](https://leafletjs.com/download.html).
+
+## Ejemplo de mapa generado con Leaflet
+
+    <!-- Hoja de estilos CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- Biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>  
+    
+<h1>Ejemplo de mapa desarrollado con Leaflet</h1>         
