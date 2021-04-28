@@ -16,5 +16,73 @@ De acuerdo con la [Guía de inicio rápido](https://leafletjs.com/examples/quick
 Los archivos JavaScript y CSS de Leaflet pueden descargarse del [repositorio de código fuente](https://github.com/Leaflet/Leaflet) o referenciarse a través de enlaces a una [red de distribución de contenidos (CDN)](https://leafletjs.com/download.html).
 
 ## Ejemplo de mapa generado con Leaflet
-
+Haga clic en la imagen para acceder al mapa interactivo.  
 [![](img/ejemplo-mapa-leaflet.png)](https://tpb729-desarrollosigweb-2021.github.io/leccion-05-leaflet/ejemplo-leaflet-basico.html)
+
+Código HTML, CSS y JavaScript
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de mapa desarrollado con Leaflet</title>     
+    
+    <!-- Hoja de estilos CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- Biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
+</head>
+<body>
+    <h1>Ejemplo de mapa desarrollado con Leaflet</h1>     
+    
+    <div id="mapid" style="height: 500px; width: 500px;"></div>
+
+    <!-- Código principal de Leaflet -->
+    <script>
+	// Mapa Leaflet
+	var mapa = L.map('mapid').setView([10, -84], 7);
+
+	// Capa base
+	var osm = L.tileLayer(
+	  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?', 
+	  {
+	    maxZoom: 19,
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	  }
+	).addTo(mapa);		
+	    
+	// Otra capa base
+        var esri = L.tileLayer(
+	  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', 
+	  {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+	  }
+	).addTo(mapa);	    
+	    
+	// Marcadores
+	liberia = L.marker([10.633333, -85.433333]);
+	liberia.bindTooltip("Liberia").openTooltip();
+	liberia.addTo(mapa);
+	    
+	limon = L.marker([10.002216, -83.084037]);
+	limon.bindTooltip("Limón").openTooltip();
+	limon.addTo(mapa);	   
+	    
+	puntarenas = L.marker([9.966667, -84.833333]);
+	puntarenas.bindTooltip("Puntarenas").openTooltip();
+	puntarenas.addTo(mapa);	    	    
+	        
+	// Conjunto de capas base
+	var mapasBase = {
+	    "ESRI": esri,		
+	    "OSM": osm
+	};	    
+	    
+	// Control de capas
+        L.control.layers(mapasBase).addTo(mapa);	    
+    </script>									    
+</body>
+</html>
+```
