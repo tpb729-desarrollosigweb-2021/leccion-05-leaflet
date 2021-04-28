@@ -171,5 +171,6 @@ En el mapa de ejemplo:
 5. Publique su mapa en [GitHub Pages](https://pages.github.com/) y organice su código en archivos y subdirectorios separados para:
     - archivos CSS (css/\*.css).
     - archivos JavaScript (js/\*.js).  
+
 Su archivo HTML (ej. index.html) debe hacer referencia a los archivos CSS y JavaScript contenidos en los subdirectorios.
 
