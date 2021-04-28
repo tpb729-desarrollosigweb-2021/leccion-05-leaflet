@@ -161,8 +161,15 @@ La clase [Control](https://leafletjs.com/reference-1.7.1.html#control) es la cla
 * [Layers](https://leafletjs.com/reference-1.7.1.html#control-layers): activa y desactiva capas.
 * [Scale](https://leafletjs.com/reference-1.7.1.html#control-scale): añade una escala.
 
-**
-Ejercicios
+**Ejercicios**
+En el mapa de ejemplo:
+
+1. Agregue dos capas base.
+2. Agregue un marcador para San José.
+3. En los marcadores, agregue ventanas de *popup* con el nombre de cada ciudad y un enlace a la página correspondiente en [Wikipedia](https://es.wikipedia.org/).
+4. Agregue un control de escala.
+5. Publique su mapa en [GitHub Pages](https://pages.github.com/) y organice su código en archivos y directorios separados para:
+  - archivos CSS (css/\*.css).
+  - archivos JavaScript (js/\*.js).
 
 
-**
