@@ -170,8 +170,9 @@ En el mapa de ejemplo:
 1. Agregue dos capas base.
 2. Agregue un marcador para San José.
 3. En los marcadores, agregue ventanas de *popup* con el nombre de cada ciudad (o cantón) y un enlace a la página correspondiente en [Wikipedia](https://es.wikipedia.org/).
-4. Agregue un control de escala.
-5. Publique su mapa en [GitHub Pages](https://pages.github.com/) y organice su código en archivos y subdirectorios separados para:
+4. Personalice los marcadores (al menos uno) con íconos de Font Awsome.
+5. Agregue un control de escala.
+6. Publique su mapa en [GitHub Pages](https://pages.github.com/) y organice su código en archivos y subdirectorios separados para:
     - archivos CSS (css/\*.css).
     - archivos JavaScript (js/\*.js).  
 
