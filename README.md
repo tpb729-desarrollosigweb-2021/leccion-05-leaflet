@@ -17,4 +17,4 @@ Los archivos JavaScript y CSS de Leaflet pueden descargarse del [repositorio de 
 
 ## Ejemplo de mapa generado con Leaflet
 
-![](img/ejemplo-mapa-leaflet.png)
+[![](img/ejemplo-mapa-leaflet.png)](https://tpb729-desarrollosigweb-2021.github.io/leccion-05-leaflet/ejemplo-leaflet-basico.html)
