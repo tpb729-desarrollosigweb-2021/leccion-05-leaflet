@@ -89,10 +89,47 @@ Código HTML, CSS y JavaScript
 ```
 
 ## Clases del API de Leaflet
-### Map
+### Clase Map
 La clase [Map](https://leafletjs.com/reference-1.7.1.html#map) es la clase central del API de Leaflet. Se utiliza para crear un mapa y manipularlo.
 
 ```javascript
 // Mapa Leaflet
 var mapa = L.map('mapid').setView([10, -84], 7);
+```
+
+### Método setView()
+El método [setView()](https://leafletjs.com/reference-1.7.1.html#map-setview) asigna una vista (centro y nivel de acercamiento) y niveles de animación al mapa.
+
+```javascript
+// Definición de la vista de un mapa
+map.setView(L.latLng([10, -84]), 10);	
+```
+
+### Clase TileLayer
+La clase [TileLayer](https://leafletjs.com/reference-1.7.1.html#tilelayer) se utiliza para desplegar capas de teselas.
+
+```javascript
+// Despliegue de la capa de OpenStreetMap
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?', 
+  {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }
+)
+```
+
+En [Leaflet Provider Demo](https://leaflet-extras.github.io/leaflet-providers/preview/) puede verse una lista de proveedores de capas de teselas.
+
+### Clase Marker
+La clase [Marker](https://leafletjs.com/reference-1.7.1.html#marker) se utiliza para desplegar marcadores en el mapa.
+
+Puede utilizarse conjuntamente con las clases [Popup](https://leafletjs.com/reference-1.7.1.html#popup) y [Tooltip](https://leafletjs.com/reference-1.5.0.html#tooltip), para desplegar información en ventanas emergentes.
+
+```javascript
+// Marcador para la Catedral Metropolitana de San José
+var catedralSJMarker = L.marker([9.9326673, -84.0787633])
+
+catedralSJMarker.bindPopup('<a href="https://es.wikipedia.org/wiki/Catedral_metropolitana_de_San_Jos%C3%A9">Catedral Metropolitana de San José</a>.<br>Catedral de estilo clásico y barroco. Templo principal de la arquidiócesis católica de San José.<br>Construída entre 1825 y 1827 y reconstruída en 1878.').openPopup();
+catedralSJMarker.bindTooltip("Catedral Metropolitana de San José").openTooltip();
 ```
