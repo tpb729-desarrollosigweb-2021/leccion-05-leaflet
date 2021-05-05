@@ -15,7 +15,7 @@ De acuerdo con la [Guía de inicio rápido](https://leafletjs.com/examples/quick
 
 Los archivos JavaScript y CSS de Leaflet pueden descargarse del [repositorio de código fuente](https://github.com/Leaflet/Leaflet) o referenciarse a través de enlaces a una [red de distribución de contenidos (CDN)](https://leafletjs.com/download.html).
 
-## Ejemplo de mapa generado con Leaflet
+## Ejemplo de mapa Leaflet básico
 Haga clic en la imagen para acceder al mapa interactivo.  
 [![](img/ejemplo-mapa-leaflet.png)](https://tpb729-desarrollosigweb-2021.github.io/leccion-05-leaflet/ejemplo-leaflet-basico.html)
 
@@ -181,7 +181,8 @@ Su archivo HTML (ej. index.html) debe hacer referencia a los archivos CSS y Java
 ### Clase GeoJSON
 La clase [GeoJSON](https://leafletjs.com/reference-1.7.1.html#geojson) representa un objeto o un arreglo de objetos GeoJSON, permitiendo su despliegue en un mapa Leaflet.
 
-El uso de capas GeoJSON se ilustra en el siguiente ejemplo, para el que se suministra el código en HTML, CSS y JavaScript.
+## Ejemplo de mapa Leaflet con capas vectoriales en formato GeoJSON
+El uso de capas vectoriales en formato GeoJSON se ilustra en el siguiente ejemplo, para el que se suministra el código en HTML, CSS y JavaScript.
 
 HTML
 ```html
