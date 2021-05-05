@@ -182,7 +182,11 @@ Su archivo HTML (ej. index.html) debe hacer referencia a los archivos CSS y Java
 La clase [GeoJSON](https://leafletjs.com/reference-1.7.1.html#geojson) representa un objeto o un arreglo de objetos GeoJSON, permitiendo su despliegue en un mapa Leaflet.
 
 ## Ejemplo de mapa Leaflet con capas vectoriales
-El uso de capas vectoriales en mapas Leaflet se ilustra en el siguiente ejemplo, para el que se suministra el código en HTML, CSS y JavaScript.
+Haga clic en la imagen para acceder al mapa interactivo.
+
+[![](img/ejemplo-mapa-leaflet.png)](https://tpb729-desarrollosigweb-2021.github.io/leccion-05-leaflet/ejemplo-leaflet-basico.html)
+
+Código HTML, CSS y JavaScript
 
 HTML
 ```html
@@ -215,6 +219,7 @@ HTML
 </html>	
 ```
 
+CSS
 ```css
 #mapid { 
   height: 500px;
@@ -222,6 +227,7 @@ HTML
 }
 ```
 
+JavaScript
 ```javascript
 // Mapa Leaflet
 var mapa = L.map('mapid').setView([9.8, -84.25], 8);
