@@ -267,3 +267,19 @@ $.getJSON("https://tpb729-desarrollosigweb-2021.github.io/datos/sinac/areas_prot
   control_capas.addOverlay(capa_asp, 'Áreas protegidas');
 });	
 ```
+
+### La biblioteca jQuery
+[jQuery](https://jquery.com/) es una biblioteca JavaScript de uso muy extendido. Fue diseñada para facilitar el acceso al [Document Object Model (DOM)](https://es.wikipedia.org/wiki/Document_Object_Model) de HTML, así como para el manejo de eventos y animaciones CSS, entre otras capacidades.
+
+Para utilizar jQuery, debe incluirse su enlace en el documento HTML:
+```html
+// Enlace a jQuery
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>	
+```
+
+jQuery define una función global llamada ```jQuery()```, la cual acostumbra referenciarse de manera abreviada con el símbolo ```$```. Así, por ejemplo, la primera sentencia del siguiente bloque almacena en una variable todos los elementos ```<div>``` de un documento y la segunda cambia el color de todos los elementos ```<h1>```.
+```javascript
+var divs = $("div");
+
+$("h1").css("color", "#0088ff");
+```
