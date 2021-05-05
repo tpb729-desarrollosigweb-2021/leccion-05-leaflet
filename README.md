@@ -178,3 +178,39 @@ En el mapa de ejemplo:
 
 Su archivo HTML (ej. index.html) debe hacer referencia a los archivos CSS y JavaScript contenidos en los subdirectorios.
 
+### Clase GeoJSON
+La clase [GeoJSON](https://leafletjs.com/reference-1.7.1.html#geojson) representa un objeto o un arreglo de objetos GeoJSON, permitiendo su despliegue en un mapa Leaflet.
+
+El uso de capas GeoJSON se ilustra en el siguiente ejemplo, para el que se suministra el código en HTML, CSS y JavaScript.
+
+HTML
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de mapa desarrollado con Leaflet</title>     
+
+    <!-- Enlace a biblioteca JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!-- Enlace a hoja CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    
+    <!-- Enlace a biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Ejemplo de mapa Leaflet con capas vectoriales</h1>     
+    
+    <!-- Elemento div para contener el mapa Leaflet -->
+    <div id="mapid"></div>
+
+    <!-- Código JavaScript para generar y manejar el mapa Leaflet -->
+    <script src="js/scripts.js"></script>					
+</body>
+</html>	
+```
+
