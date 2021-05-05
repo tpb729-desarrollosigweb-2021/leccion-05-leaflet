@@ -277,9 +277,18 @@ Para utilizar jQuery, debe incluirse su enlace en el documento HTML:
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>	
 ```
 
-jQuery define una función global llamada ```jQuery()```, la cual acostumbra referenciarse de manera abreviada con el símbolo ```$```. Así, por ejemplo, la primera sentencia del siguiente bloque almacena en una variable todos los elementos ```<div>``` de un documento y la segunda cambia el color de todos los elementos ```<h1>```.
-```javascript
-var divs = $("div");
+jQuery define una función global llamada ```jQuery()```, la cual acostumbra referenciarse de manera abreviada con el símbolo ```$```. La sintaxis básica de jQuery es ```$(selector).accion()```.
 
+```javascript
+// Esconde todos los elementos p
+$("p").hide()
+
+// Esconde todos los elementos de la clase test
+$(".test").hide()
+
+// Esconde el elemento con id="test"
+$("#test").hide()
+
+// Cambia el color de todos los elementos h1
 $("h1").css("color", "#0088ff");
 ```
