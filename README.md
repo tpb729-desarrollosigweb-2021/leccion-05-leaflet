@@ -184,7 +184,7 @@ La clase [GeoJSON](https://leafletjs.com/reference-1.7.1.html#geojson) represent
 ## Ejemplo de mapa Leaflet con capas vectoriales
 Haga clic en la imagen para acceder al mapa interactivo.
 
-[![](img/ejemplo-mapa-leaflet.png)](https://tpb729-desarrollosigweb-2021.github.io/leccion-05-leaflet/ejemplo-leaflet-basico.html)
+[![](img/ejemplo-mapa-leaflet-capas-vectoriales.png)](https://tpb729-desarrollosigweb-2021.github.io/leccion-05-leaflet/ejemplo-leaflet-basico.html)
 
 Código HTML, CSS y JavaScript
 
