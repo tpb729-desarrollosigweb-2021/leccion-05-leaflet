@@ -164,7 +164,7 @@ La clase [Control](https://leafletjs.com/reference-1.7.1.html#control) es la cla
 * [Layers](https://leafletjs.com/reference-1.7.1.html#control-layers): activa y desactiva capas.
 * [Scale](https://leafletjs.com/reference-1.7.1.html#control-scale): añade una escala.
 
-**Ejercicios**
+**Ejercicios**  
 En el mapa de ejemplo:
 
 1. Agregue dos capas base.
