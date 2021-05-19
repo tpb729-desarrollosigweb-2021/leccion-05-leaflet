@@ -134,7 +134,7 @@ catedralSJMarker.bindPopup('<a href="https://es.wikipedia.org/wiki/Catedral_metr
 catedralSJMarker.bindTooltip("Catedral Metropolitana de San José").openTooltip();
 ```
 
-Varios sitios web ofrecen íconos que pueden utilizarse como marcadores personalizados como, por ejemplo, [Font Awesome](https://fontawesome.com/). Para utilizarlos, siga la documentación en [Font Awsome 5 Intro](https://www.w3schools.com/icons/fontawesome5_intro.asp) y [Basic Use - Font Awsome](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use). Puede ver un ejemplo de su uso en [https://tpb729-desarrollosigweb-2021.github.io/ejemplo-mapa-leaflet-iconos-fa/](https://tpb729-desarrollosigweb-2021.github.io/ejemplo-mapa-leaflet-iconos-fa/).
+Varios sitios web ofrecen íconos que pueden utilizarse como marcadores personalizados como, por ejemplo, [Font Awesome](https://fontawesome.com/). Para utilizarlos, siga la documentación en [Font Awesome 5 Intro](https://www.w3schools.com/icons/fontawesome5_intro.asp) y [Basic Use - Font Awesome](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use). Puede ver un ejemplo de su uso en [https://tpb729-desarrollosigweb-2021.github.io/ejemplo-mapa-leaflet-iconos-fa/](https://tpb729-desarrollosigweb-2021.github.io/ejemplo-mapa-leaflet-iconos-fa/).
 
 ### Clase Control
 La clase [Control](https://leafletjs.com/reference-1.7.1.html#control) es la clase base para implementar controles en un mapa. Todas las clases de controles heredan de esta clase. Ejemplos de clases de controles: 
