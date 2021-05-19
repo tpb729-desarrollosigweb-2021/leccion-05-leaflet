@@ -134,27 +134,7 @@ catedralSJMarker.bindPopup('<a href="https://es.wikipedia.org/wiki/Catedral_metr
 catedralSJMarker.bindTooltip("Catedral Metropolitana de San José").openTooltip();
 ```
 
-Varios sitios web ofrecen íconos que pueden utilizarse como marcadores personalizados como, por ejemplo, [Font Awesome](https://fontawesome.com/).
-
-HTML
-```html
-// Enlace a Font Awsome
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-crossorigin="anonymous" />	
-```
-
-JavaScript
-```javascript
-L.marker(
-  [9.9326673, -84.0787633],
-  {
-    icon: L.divIcon(
-      {html: '<i class="fas fa-church"></i>'}
-    )
-  }
-)	
-```
+Varios sitios web ofrecen íconos que pueden utilizarse como marcadores personalizados como, por ejemplo, [Font Awesome](https://fontawesome.com/). Para utilizarlos, siga la documentación en [Font Awsome 5 Intro](https://www.w3schools.com/icons/fontawesome5_intro.asp) y [Basic Use - Font Awsome](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use).
 
 ### Clase Control
 La clase [Control](https://leafletjs.com/reference-1.7.1.html#control) es la clase base para implementar controles en un mapa. Todas las clases de controles heredan de esta clase. Ejemplos de clases de controles: 
